@@ -3,16 +3,13 @@
 layout: home
 
 hero:
-  name: "My Awesome Project"
-  text: "A VitePress Site"
-  tagline: My great project tagline
+  name: "Problem Trainning"
+  text: "solution and note"
+  tagline: practice makes prefect
   actions:
     - theme: brand
-      text: Markdown Examples
-      link: /markdown-examples
-    - theme: alt
-      text: API Examples
-      link: /api-examples
+      text: 算竞，启动
+      link: /
 
 features:
   - title: Feature A
