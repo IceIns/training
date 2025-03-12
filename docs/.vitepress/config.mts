@@ -6,6 +6,9 @@ export default defineConfig({
   title: "Problem Trainning",
   description: "A VitePress Site",
   themeConfig: {
+    outlineTitle: '目录',
+    outline: [2,6],
+    // logo: '/logo2.jpg',
     // https://vitepress.dev/reference/default-theme-config
     nav: [
       { text: '首页', link: '/' },
