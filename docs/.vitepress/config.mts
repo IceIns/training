@@ -2,6 +2,7 @@ import { defineConfig } from 'vitepress'
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
+  lastUpdated: true,
   base: '/training/',
   title: "Problem Trainning",
   description: "A VitePress Site",
@@ -12,42 +13,54 @@ export default defineConfig({
     // https://vitepress.dev/reference/default-theme-config
     nav: [
       { text: '首页', link: '/' },
-      { text: '洛谷', link: '/luogu/ds' },
-      { text: 'Codeforces', link: '/codeforces/div1'},
+      { 
+        text: '洛谷',
+        items: [
+            { text: '数据结构', link: '/luogu/ds/sol1' },
+            { text: '动态规划', link: '/luogu/dp/sol1' },
+            { text: '数论', link: '/luogu/math/sol1' },
+            { text: '字符串', link: '/luogu/string/sol1' },
+            { text: '图论', link: '/luogu/graph/sol1' },
+            { text: '多项式', link: '/luogu/poly/sol1' },
+            { text: '计算几何', link: '/luogu/geo/sol1' },
+            { text: '网络流', link: '/luogu/flow/sol1' },
+            { text: '博弈论', link: '/luogu/game/sol1' },
+            { text: '杂项', link: '/luogu/other/sol1' },
+        ]
+      },
+      { 
+        text: 'Codeforces',
+        items: [
+            { text: 'div 1', link: '/codeforces/div1/sol1' },
+            { text: 'div 2', link: '/codeforces/div2/sol1' },
+            { text: 'div 3', link: '/codeforces/div3/sol1' },
+            { text: 'div 4', link: '/codeforces/div4/sol1' },
+            { text: 'div 1+2', link: '/codeforces/sol1' },
+            { text: 'edu', link: '/codeforces/edu/sol1' },
+            { text: 'gym', link: '/codeforces/gym/sol1' },
+        ]
+      },
       { text: 'Atcoder', link: '/atcoder/ABC'},
       { text: '牛客', link: '/nowcoder/weekly'}
     ],
 
     sidebar: {
-      '/luogu/': [
+      '/luogu/数据结构': [
         {
-          text: '洛谷',
+          text: '',
           items: [
-            { text: '数据结构', link: '/luogu/ds' },
-            { text: '动态规划', link: '/luogu/dp' },
-            { text: '数论', link: '/luogu/math' },
-            { text: '字符串', link: '/luogu/string' },
-            { text: '图论', link: '/luogu/graph' },
-            { text: '多项式', link: '/luogu/poly' },
-            { text: '计算几何', link: '/luogu/geo' },
-            { text: '网络流', link: '/luogu/flow' },
-            { text: '博弈论', link: '/luogu/game' },
-            { text: '杂项', link: '/luogu/other' },
+            
           ]
         }
       ],
 
-      '/codeforces/': [
+      '/codeforces/edu': [
         {
-          text: 'Codeforces',
+          text: 'edu',
           items: [
-            { text: 'div 1', link: '/codeforces/div1' },
-            { text: 'div 2', link: '/codeforces/div2' },
-            { text: 'div 3', link: '/codeforces/div3' },
-            { text: 'div 4', link: '/codeforces/div4' },
-            { text: 'edu', link: '/codeforces/edu' },
-            { text: 'div 1+2', link: '/codeforces/div 1+2' },
-            { text: 'gym', link: '/codeforces/gym' },
+            { text: '170+', link: '/codeforces/edu/sol17' },
+            { text: '160+', link: '/codeforces/edu/sol16' },
+            { text: '150+', link: '/codeforces/edu/sol15' },
           ]
         }
       ],
